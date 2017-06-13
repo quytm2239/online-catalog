@@ -1,0 +1,102 @@
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    margin: 0px;
+    border: 0px solid #FF0000;
+    text-align: center;
+    vertical-align: middle;
+    color: #FF0000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/*css for 4 color loader*/
+.loader {
+    position:fixed;
+    margin-top: -15px; /*set to a negative number 1/2 of your height*/
+    margin-left: -15px; /*set to a negative number 1/2 of your width*/
+    top: 50%;
+    left: 50%;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid blue;
+    border-right: 6px solid green;
+    border-bottom: 6px solid red;
+    border-left: 6px solid pink;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    z-index: 1000;
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

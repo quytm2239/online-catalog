@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="login/css/login.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body>
+
+<h2>Login Form</h2>
+
+<div id="loader" class="loader"></div>
+<div class="error" id="error"></div>
+
+<form action="/api/login" method="post">
+  <div class="login/imgcontainer">
+    <img src="login/img/avatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input id="password" type="password" placeholder="Enter Password" name="password" required>
+
+    <button id="submit" type="button">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<script type="text/javascript" src="login/js/login.js"></script>
+</body>
+</html>
