@@ -1,9 +1,16 @@
 module.exports = function(app, views_router, config){
 	var utils = app.get('utils');
 	var errcode = app.get('errcode');
-	var auth = app.get('check_session');
 	views_router.get('/', function(req, res) {
         res.sendFile(__dirname + '/root.html');
+	});
+
+	views_router.get('/topband', function(req, res) {
+		res.sendFile(__dirname + '/topband.html');
+	});
+
+	views_router.get('/bottomband', function(req, res) {
+		res.sendFile(__dirname + '/bottomband.html');
 	});
 
 	// views_router.get([
