@@ -157,7 +157,8 @@ controllers = require('./controllers')(app, api_router, config);
 var views_router = express.Router();
 app.use(config.views_path,views_router);
 
-app.use(express.static(__dirname + '/home_page'));
+app.use(express.static(__dirname + '/lib'));
+// app.use(express.static(__dirname + '/home_page'));
 app.use(express.static(__dirname + '/views'));
 
 views = require('./views')(app, views_router, config);
